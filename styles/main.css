@@ -143,7 +143,7 @@ html, body {
 
 @font-face {
 	font-family: 'Roboto';
-	src: url("file:///C://Users/brandon-desktop/Desktop/ILIKEU_page/fonts//Roboto-Bold.ttf")  format('truetype');
+	src: url("https://raw.githubusercontent.com/brandonlecruix/ilikeu_webpage/master/fonts/Roboto-Bold.ttf")  format('truetype');
 }
 @media screen and (max-width: 1200px) {
 	.description {
