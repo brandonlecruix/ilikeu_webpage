@@ -1,0 +1,219 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+    font-family: roboto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 200px;
+    flex-direction: column;
+    height: 100%;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	width: 78vw;
+	margin-top: 2vw;
+}
+.logo {
+	width: 70px;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 152px;
+}
+.menu a {
+	text-decoration: none;
+	color: white;
+}
+.contact {
+	width: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer {
+	background-color: #292929;
+	display: flex;
+	height: 8%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+
+.main_banner {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.icon_gif {
+    position: absolute;
+    top: 10vw;
+	width: 7vw;
+    height: 15vw;
+    border-radius: 18px;
+    transform: perspective(400px) rotatex(36deg);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 0px 0px 30px 0px rgb(255, 255, 255);
+}
+.banner {
+    width: 51vw;
+   	margin: 7vw 0vw 0vw 0vw;
+}
+.download {
+    background: rgb(237,30,121);
+    background: linear-gradient(45deg, rgba(237,30,121,1) 5%, rgba(102,45,140,1) 95%);
+    font-family: roboto;
+    border-style: none;
+    border-radius: 45px;
+    font-size: 25px;
+    border-color: #bdbdbd;
+    border-width: 1px;
+    padding: 22.5px;
+    width: 285px;
+	margin: -7vw 0vw 0vw 0vw;
+}
+.download a {
+    color: white;
+    text-decoration: none; 
+}
+.download:hover {
+    width: 295px;
+    box-shadow: 0px 0px 30px 0px rgba(255, 0, 235, 0.41);
+}
+
+
+.snapshots {
+    top: 7px;
+    right: -4vw;
+    position: relative;
+}
+.featured_snapshot {
+	position: absolute;
+	width: 31vw;
+	max-width: 28vw;
+	border-radius: 12px;
+	opacity: 1.0;
+}
+.snapshot_selection {
+    top: 33vw;
+    right: 80vw;
+    background: linear-gradient(45deg, rgb(237, 30, 121) 5%, rgb(102, 45, 140) 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transform: rotate(-8deg);
+    position: absolute;
+    width: 18vw;
+    max-width: 13vw;
+}
+.selection:hover {
+    box-shadow: inset 2px 11px 20px 6px rgb(255, 0, 235);
+    font-size: 2.5vw;
+}
+.selection:active {
+	opacity: 0.7;
+	user-select: none;
+}
+.snapshot_selection p {
+	font-family: roboto;
+	font-size: 1.6vw;
+	filter: blur(0.1px) drop-shadow(2px 4px 6px black);
+	padding: 0px 0px 0px 0px;
+	color: white;
+}
+.description {
+    color: white;
+    position: relative;
+    right: -231px;
+    width: 777px;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url("file:///C://Users/brandon-desktop/Desktop/ILIKEU_page/fonts//Roboto-Bold.ttf")  format('truetype');
+}
+@media screen and (max-width: 1200px) {
+	.description {
+		right: -41vw;
+	    font-size: 1.7vw;
+	}
+	.logo {
+		width: 5vw;
+	}
+	.featured_snapshot {
+		max-width: 36vw;
+	}
+	.snapshot_selection p {
+		font-size: 1.9vw;
+	}
+	.snapshot_selection {
+		top: 37vw;
+	    right: 78vw;
+	    width: 23vw;
+	    max-width: 19vw;
+	}
+}
+@media 
+(max-width:500px) and (min-height: 600px), 
+(max-width:320px) and (min-height: 500px){ 
+	.logo {
+	    width: 8vw;
+	}
+	.nav {
+		font-size: 3vw;
+		width: 91vw;
+	}
+	.description {
+		width: 777px;
+	    top: -15vw;
+	    right: -10vw;
+	    font-size: 2.7vw;
+	}
+	.snapshots {
+		top: 52vw;
+    	right: -22vw;
+	}
+	.featured_snapshot {
+		max-width: 56vw;
+		width: 57vw;
+	}
+	.snapshot_selection {
+		top: 120vw;
+	    right: 62vw;
+	    width: 44vw;
+	    max-width: 32vw;
+	}
+	.snapshot_selection p {
+	    font-size: 3.9vw;
+	}
+	.selection:hover {
+	    font-size: 4.5vw;
+	}
+
+	.icon_gif {
+	    top: 142px;
+	    width: 17vw;
+	    height: 35vw;
+	}
+	.banner {
+	    width: 115vw;
+	    margin: 85px 0px 0px 0px;		
+	}
+	.download {
+		width: 66vw;
+    	margin: -67px 0px 31px 0px;
+	}
+}
